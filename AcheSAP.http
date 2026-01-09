@@ -1,0 +1,6 @@
+@AcheSAP_HostAddress = http://localhost:5029
+
+GET {{AcheSAP_HostAddress}}/
+Accept: application/json
+
+###
