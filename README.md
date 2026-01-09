@@ -122,6 +122,15 @@ API REST desenvolvida em .NET 8 (LTS) para integração com o módulo SD (Sales 
    - Consultar Pedido Específico
      ````
      GET /api/salesorders/{orderNumber}
+## Tecnologias Utilizadas
+   ````
+   Tecnologia	    | Versão	 | Propósito
+   .NET	        | 8.0 LTS	 | Framework principal
+   C#	            | 12.0	     | Linguagem de programação
+   ASP.NET Core	| 8.0	     | Web API framework
+   Swashbuckle	    | 6.5.0	     | Documentação OpenAPI/Swagger
+   JWT Bearer	    | 8.0.0	     | Autenticação JWT
+   ````
 ## Uso de IA no desenvolvimento do Projeto
 -  Claude 4.5 Sonnet Thinking
    - Foi utlizado o Claude Sonnet como auxiliar na aplicação dos padrões de projeto e modelagem das camadas da aplicação, bem como na documentação final.
