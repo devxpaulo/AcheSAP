@@ -1,7 +1,4 @@
-# Projeto AcheSAP
-O Projeto AcheSAP consiste de um Desafio Técnico de simulação de uma integração com o SAP S/4Hana por meio de uma API Rest para a posição de Desenvolvedor .NET da Softtek alocado na Aché Laboratórios.
-
-## SAP S/4HANA Sales Integration API
+# SAP S/4HANA Sales Integration API
 API REST desenvolvida em .NET 8 (LTS) para integração com o módulo SD (Sales & Distribution) do SAP S/4HANA, permitindo a criação e consulta de pedidos de venda através de endpoints seguros e documentados.
 
 ## Boas Práticas Aplicadas no Projeto
