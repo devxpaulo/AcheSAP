@@ -10,29 +10,7 @@ API REST desenvolvida em .NET 8 (LTS) para integração com o módulo SD (Sales 
 - Mock de integração SAP simulando chamadas OData
 - Repository Pattern para abstração de persistência
 
-## Arquitetura
-- A aplicação segue os princípios de Clean Architecture e DDD, organizada em 4 camadas:
-  ````
-  ┌─────────────────────────────────────────────┐
-  │           API Layer (Presentation)          │
-  │   Controllers, Middlewares, Swagger         │
-  └──────────────────┬──────────────────────────┘
-                     │
-  ┌──────────────────▼──────────────────────────┐
-  │         Application Layer (Use Cases)       │
-  │   Services, DTOs, Interfaces                │
-  └──────────────────┬──────────────────────────┘
-                     │
-  ┌──────────────────▼──────────────────────────┐
-  │    Infrastructure Layer (External Concerns) │
-  │   Repositories, SAP Service, JWT, Data      │
-  └──────────────────┬──────────────────────────┘
-                     │
-  ┌──────────────────▼──────────────────────────┐
-  │         Domain Layer (Business Logic)       │
-  │   Entities, Value Objects, Domain Services  │
-  └─────────────────────────────────────────────┘
-## Princípios SOLID Aplicados
+## Princípios SOLID 
 - Single Responsibility Principle (SRP)
   - Cada classe tem uma única responsabilidade:
     - SalesOrder → gerencia pedidos
@@ -62,6 +40,28 @@ API REST desenvolvida em .NET 8 (LTS) para integração com o módulo SD (Sales 
     public SalesOrderService(
     ISalesOrderRepository repository,
     ISapS4HanaService sapService) { }
+## Arquitetura
+- A aplicação segue os princípios de Clean Architecture e DDD, organizada em 4 camadas:
+  ````
+  ┌─────────────────────────────────────────────┐
+  │           API Layer (Presentation)          │
+  │   Controllers, Middlewares, Swagger         │
+  └──────────────────┬──────────────────────────┘
+                     │
+  ┌──────────────────▼──────────────────────────┐
+  │         Application Layer (Use Cases)       │
+  │   Services, DTOs, Interfaces                │
+  └──────────────────┬──────────────────────────┘
+                     │
+  ┌──────────────────▼──────────────────────────┐
+  │    Infrastructure Layer (External Concerns) │
+  │   Repositories, SAP Service, JWT, Data      │
+  └──────────────────┬──────────────────────────┘
+                     │
+  ┌──────────────────▼──────────────────────────┐
+  │         Domain Layer (Business Logic)       │
+  │   Entities, Value Objects, Domain Services  │
+  └─────────────────────────────────────────────┘
 ## Integração SAP S/4HANA
 - Arquitetura de Integração
   ````
